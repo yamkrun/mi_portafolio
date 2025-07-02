@@ -1,13 +1,11 @@
-header{
-    
-    margin: 35px;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
+
 .imagen{
     border: solid 3px #F9B5D0;
     border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+    /* supuestamente según chat gpt el display block y margin 0 auto hacían que 
+    la imagen se centrara*/
 }
 h2{
     color: #da4a6e;
