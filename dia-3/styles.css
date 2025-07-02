@@ -1,0 +1,99 @@
+.caja{
+    
+    margin: 50px;
+    display:flex;
+    background-color: pink;
+    padding: 20px 10px 20px 15px;
+    gap:8px;
+    width: 308px;
+    justify-content: space-between;
+}
+.mariposa{
+    padding-top: 20px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: left;
+}
+.flor{
+    
+    padding-bottom: 20px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: right;
+}
+/*ejercicio_1*/
+.ejercicio1{
+    background-color: cadetblue;
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(55, 155, 158);
+    padding: 20px;
+    margin: 50px;
+}
+/*ejercicio_2*/
+#caja1{
+    background-color: rgb(245, 157, 172);
+}
+#caja2{
+    background-color: rgb(71, 140, 143);
+    margin: 30px;
+}
+/*ejercicio3*/
+#caja4{
+    background-color: rgb(238, 125, 144);
+    margin: 20px;
+}
+#caja5{
+    background-color: rgb(238, 125, 144);
+    padding: 20px;
+}
+
+#ejercicio4{
+    margin: 20px;
+    border-top: 5px solid rgb(228, 87, 87);
+    border-right: 3px dashed rgb(60, 160, 60);
+    border-bottom: 5px dotted rgb(98, 159, 238);
+    border-left: 2px inset palevioletred;
+}
+#ejercicio5{
+    width: 300px;
+    margin:0 auto;
+    background-color: rgb(241, 165, 178);
+}
+#ejercicio6{
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+    border: 4px solid black;
+    margin: 50px;
+}
+.ejercicio7{
+    margin: 50px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 3px cadetblue solid; 
+}
+#ejercicio8{
+    padding: 20px;
+    border:2px solid gray;
+    border-radius: 10px;
+}
+#ejercicio9{
+    background-color: rgb(76, 76, 252);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    cursor:pointer;
+    margin:50px;
+
+}
+#ejercicio10{
+    background-color: #ffdddd;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 300px;
+
+}
