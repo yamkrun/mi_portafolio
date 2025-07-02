@@ -1,0 +1,30 @@
+header{
+    
+    margin: 35px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.imagen{
+    border: solid 3px #F9B5D0;
+    border-radius: 100%;
+}
+h2{
+    color: #da4a6e;
+}
+.cajas{
+    border: solid 3px #F9B5D0;
+    margin: 35px;
+    padding: 20px ;
+    font-size: 18px;
+    background-color:#FFFFFF;
+    border-radius: 10px;
+    color: #444444;
+}
+.redes{
+    color: #ff9ebb;
+}
+footer{
+    text-align: center;
+    background-color: #f3b6be;
+}
