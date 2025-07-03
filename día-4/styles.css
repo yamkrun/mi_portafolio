@@ -1,0 +1,107 @@
+/* position:relative(es para elementos que queremos que se
+superposicionen con otro) con estos usando top, bottom,right, left puedo mover
+mi caja en relascion a su posición relativa*/
+/*position: Absolute va a buscar al padre mas cercano que no tenga una 
+posisión igual a la de bloque y se superpondra a el, si no hay padre tomará
+al body. Lo puedo poner en top, bottom, rigth,left*/
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    display: column;
+    justify-content: center;
+    align-items: center;
+
+}
+main{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor{
+    border: 2px solid rgb(189, 33, 80);
+    height: 600px;
+    width: 300px;
+    position: relative;
+   
+
+}
+.caja{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.caja1{
+    background-color: blueviolet;
+    /*position: relative;/*necesito ponerle valor*/
+    width: 100px;
+    height: 100px; 
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.caja2{
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+    
+
+    
+}
+.caja3{
+    background-color: rgb(146, 42, 59);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 100px;
+}
+.caja4{
+    background-color: rgb(133, 69, 91);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 100px;
+    
+}
+header{
+    height: 40px;
+    display: flex;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+ul{
+    margin-top: 10px;
+    gap: 30px;
+    display: flex;
+}
+
+.feliz{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(172, 92, 154);
+    position: sticky;
+    top: 50px;
+    bottom: 50px;
+}
+
+/* position fixed se sobreposisiona sobre otros elementos
+y no se mueve no importa cuanto escroleemos¨*/
+/*z-index sirve para posisionar algo por encima de otras cosas
+le doy valores generalmente de 10 en 10 por origen de importancia*/
+/* hay dos posisiones mas el static y el sticky
+static: no se puede moveres el que viene por defecto
+sticky: es una mezcla entre relative y fixed, se comporta como relative hasta que se alcanza cierto
+scroll y luego se pega como fixed*/
