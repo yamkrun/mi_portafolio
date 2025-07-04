@@ -1,22 +1,31 @@
-
-html,
-body{
+*{
     margin: 0;
     padding: 0;
-    height: 100%;
+    box-sizing: border-box;
+}
+html,
+body{ height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-3e90-622f-9d73-e223745c6cf9/raw?se=2025-07-04T03%3A52%3A58Z&sp=r&sv=2024-08-04&sr=b&scid=07015bc9-e291-5f93-8ef8-528ea662308d&skoid=add8ee7d-5fc7-451e-b06e-a82b2276cf62&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-03T14%3A53%3A16Z&ske=2025-07-04T14%3A53%3A16Z&sks=b&skv=2024-08-04&sig=9Okf/SEMS8XoPrQRtOQkmoUaLLjhC/0SuQwP5V9zECE%3D) ;
-    background-size: cover;
 }
 li{
     list-style: none;
 }
 header{
-    width: 100%;
-    height: 80px;
+    height: 10%;
     background-color: #FBC0D9;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+nav{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
 }
 h1{
     color:#EF5DA8;
@@ -25,6 +34,7 @@ h1{
 
 }
 .menu{
+    padding-left: 10% ;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -32,35 +42,49 @@ h1{
     background-color: #DCC6F9;
 
 }
+.papa{
+    height: 70%;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
 .hero{
+    width: 70%;
     background-color: #D5F4FF;
-    height: 300px;
     display: flex;
     align-items: center;
-    position: relative;
-    margin: 100px ;
-    padding: 100px;
+    justify-content: center;
     border-radius: 10px;
-
+    flex-direction: row-reverse;
+    padding: 10px;
+    
+   
 }
-.winx{
-    position: absolute;
-    right: 10px;
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 .titulo{
     display: flex;
     align-items: center;
-    font-size: 70px;
     color: #FF69B4; /* Rosa vibrante */
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5)
-  
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+    font-size: 50px; 
 }
 .hero-p{
     display: flex;
     align-items: center;
     font-size: 20px;
     color: #7B6F94;
+    margin-top: 25px;
 }
 .hero-btn{
     display: flex;
@@ -74,24 +98,20 @@ h1{
     background-color: #FF1493;
     cursor: pointer;
     width: 200px;
+    margin-top: 25px;
    
 }
 a{
     text-decoration: none;
     color: white;
 }
-main{
-    flex: 1;
-    height: 100%;
-    
-}
 .seccion2{
+    width: 70%;
     background-color: #F7D6FF;
-    margin: 0px 30px;
-    padding: 50px;
     color: #7B6F94;
     border-radius: 10px;
-    margin: 100px;
+    padding: 0px 40px;
+
 }
 .sub3{
     color: #fd3197;
@@ -103,10 +123,10 @@ main{
     color: #eb56a0;
 }
 
-footer{
-    color: #666666;
+footer{ 
+    height: 20%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    color: #666666;
     background-color: #CDB4F3;
 }

@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.papa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 600px;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: rgb(241, 192, 151);
+    
+}
+.container{
+    display: flex;
+    background-color: rgb(241, 192, 151);
+    flex-wrap: wrap ;
+    width: 300px;
+    height: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.caja{
+    width: 80px;
+    height: 80px;
+    border: 2px solid ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.caja1{
+    background-color: #F48CA5;
+    border: #f7567b;
+    border-radius: 10px;
+
+}
+.caja2{
+    background-color: #C6A5E7;
+    border: #a66ae2;
+    
+}
+.caja3{
+    background-color: #86CBF9;
+    border: #42a4e6;
+    
+}
+.caja4{
+    background-color: #8FE8D0;
+    border: #3cd8ae;
+
+}
+.caja5{
+    background-color: #FEE28A;
+    border: #f3c52e;
+}
+.caja6{
+    background-color: #FFA994;
+    border: #fa6843;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 150px;
+    background-color: rgb(158, 158, 233);
+    border:2px solid rgb(131, 131, 245);
+    border-radius: 10px;
+}
+/* Extra small (xs) – menores a 576px */
+@media (max-width: 575.98px) {
+  /* estilos pantallas menores a 576px */
+  .papa{
+    flex-direction: column-reverse;
+  }
+  .container {
+    width: 200px;
+    height: 300px;
+    gap: 4px;
+    flex-wrap: wrap-reverse;
+    flex-direction: column-reverse;
+
+  }
+
+}
+/* Small (sm) – 576px o más */
+@media (min-width: 576px) {
+}
+/* Medium (md) – 768px o más */
+@media (min-width: 768px) {
+  
+}
+/* Large (lg) – 992px o más */
+@media (min-width: 992px) {
+  }
+
+/* Extra large (xl) – 1200px o más */
+@media (min-width: 1200px) {
+}
+/* Extra extra large (xxl) – 1400px o más */
+@media (min-width: 1400px) {
+}
