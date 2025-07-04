@@ -14,7 +14,7 @@ li{
     list-style: none;
 }
 header{
-    height: 10%;
+    height: 150px;
     background-color: #FBC0D9;
     position: relative;
     display: flex;
@@ -43,8 +43,7 @@ h1{
 
 }
 .papa{
-    height: 70%;
-    flex:1;
+    height: 1000px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -60,7 +59,6 @@ h1{
     justify-content: center;
     border-radius: 10px;
     flex-direction: row-reverse;
-    padding: 10px;
     
    
 }
@@ -124,7 +122,7 @@ a{
 }
 
 footer{ 
-    height: 20%;
+    height: 150px;
     display: flex;
     justify-content: center;
     color: #666666;
