@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="todo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="h-screen flex items-center justify-center bg-[url(https://wallpapers-clan.com/wp-content/uploads/2024/08/minimalist-hello-kitty-cute-desktop-wallpaper-cover.jpg)] bg-center bg-cover 
+dark:bg-[url(https://motionbgs.com/media/1730/sweet-and-spooky-kuromi.jpg)] flex-col p-4">
+    <h1 class="dark:text-white">hola mundo</h1>
+    <button class="bg-blue-600 text-white p-4 rounded-2xl ml-2" id="btn">cambio de tema</button>
+    <script>
+        let botonCambio = document.querySelector("#btn");
+        let todo = document.querySelector("#todo");
+        botonCambio.addEventListener("click", function (){
+            todo.classList.toggle("dark");
+        });
+    </script>
+</body>
+</html>
