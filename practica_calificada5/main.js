@@ -1,5 +1,4 @@
 console.log("hola mundo");
-/*Usá parseInt() si esperás un número entero, o parseFloat() si puede tener decimales:*/
 
 let opcion = parseInt(prompt(
   "CALCULADORA DE ÁREAS:\n" +
@@ -9,10 +8,11 @@ let opcion = parseInt(prompt(
   "Seleciona una opción con un número del 1 al 3"
 ));
 
+
 switch (opcion) {
     case 1:
         let cuadradoLado= parseFloat(prompt("Has elegido el cuadrado\n"+
-            "ingresa cuanto mide su lado:"))
+            "ingresa cuanto mide su lado:"))  
             alert("Área del cuadrado es: "+(cuadradoLado*cuadradoLado));
         break;
     case 2:

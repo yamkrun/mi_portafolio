@@ -97,6 +97,7 @@
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
     --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -331,6 +332,15 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-15 {
+    margin-top: calc(var(--spacing) * 15);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
@@ -426,11 +436,17 @@
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
+  .w-25 {
+    width: calc(var(--spacing) * 25);
+  }
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
   .w-48 {
     width: calc(var(--spacing) * 48);
+  }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
   }
   .w-96 {
     width: calc(var(--spacing) * 96);
@@ -511,6 +527,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-row {
+    flex-direction: row;
+  }
   .place-items-center {
     place-items: center;
   }
@@ -544,6 +563,9 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
@@ -568,6 +590,9 @@
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -588,6 +613,9 @@
   }
   .border-transparent {
     border-color: transparent;
+  }
+  .bg-\[\#4c66af\] {
+    background-color: #4c66af;
   }
   .bg-\[\#211f2c\] {
     background-color: #211f2c;
@@ -799,6 +827,15 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .px-\[0px\] {
+    padding-inline: 0px;
+  }
+  .px-\[10px\] {
+    padding-inline: 10px;
+  }
+  .px-\[15px\] {
+    padding-inline: 15px;
+  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -813,6 +850,9 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-\[30px\] {
+    padding-block: 30px;
   }
   .pt-14 {
     padding-top: calc(var(--spacing) * 14);
