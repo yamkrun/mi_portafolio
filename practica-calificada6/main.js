@@ -14,7 +14,7 @@ function depositar(){
     }else{
     saldo+=deposito
     mostrarMensaje("Tu saldo actual es de:" + saldo)
-    historial +="Depositó........."+deposito+"\n"}
+    historial +="Deposito........."+deposito+"\n"}
 }
 function retirarDinero(){
     let retiro= parseFloat(prompt("cuanto dinero deseas retirar de tu cuenta?"))
@@ -23,7 +23,7 @@ function retirarDinero(){
     }else{
         saldo-=retiro
         mostrarMensaje("Tu saldo actual es de:" + saldo)
-        historial +="Retiró........."+retiro+"\n"
+        historial +="Retiro........."+retiro+"\n"
     }
 }
 
