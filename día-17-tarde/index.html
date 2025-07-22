@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="./main.js" defer></script>
+  <link rel="stylesheet" href="./output.css">
+</head>
+<body class="flex flex-col justify-center items-center h-full w-full">
+
+    <h1 class="text-4xl font-bold m-10 ">Profesor: Kevin Rodriguez</h1>
+
+    <div class="relative overflow-x-auto m-10">
+      <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <tr>
+            <th scope="col" class="px-6 py-3">Nombre del alumno</th>
+            <th scope="col" class="px-6 py-3">Edad del alumno</th>
+            <th scope="col" class="px-6 py-3">Nacionalidad del alumno</th>
+          </tr>
+        </thead>
+        <tbody id="estudiantes">
+        </tbody>
+      </table>
+    </div>
+   
+    <button id="btn" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 
+    font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none
+     dark:focus:ring-blue-800">Nuevo estudiante</button>
+  
+  <div id="modal" class=" hidden bg-black/90 fixed flex-col justify-center items-center h-full w-full">
+    <button id="cerrarModal" class="text-3xl text-white m-10">x</button>
+<form id="formulario" class="max-w-sm mx-auto">
+  <div class="mb-5">
+    <label for="" class="block mb-2 text-sm font-medium text-white">Nombre</label>
+    <input type="text" id="nombre" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+  </div>
+  <div class="mb-5">
+    <label for="" class="block mb-2 text-sm font-medium text-white dark:text-white">edad</label>
+    <input type="number" id="edad" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+  </div>
+  <div class="mb-5">
+    <label for="" class="block mb-2 text-sm font-medium text-white dark:text-white">nacionalidad</label>
+    <input type="text" id="nacionalidad" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+  </div>
+  <div class="flex items-start mb-5">
+
+  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+</form>
+
+  </div>
+
+</body>
+</html>

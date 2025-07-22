@@ -1325,6 +1325,13 @@
       }
     }
   }
+  .hover\:underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
+    }
+  }
   .hover\:opacity-50 {
     &:hover {
       @media (hover: hover) {
@@ -1365,6 +1372,12 @@
   .focus\:ring-0 {
     &:focus {
       --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .focus\:ring-3 {
+    &:focus {
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
@@ -1874,6 +1887,16 @@
       --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
     }
   }
+  .dark\:text-blue-500 {
+    &:where(.dark, .dark *) {
+      color: var(--color-blue-500);
+    }
+  }
+  .dark\:text-gray-300 {
+    &:where(.dark, .dark *) {
+      color: var(--color-gray-300);
+    }
+  }
   .dark\:text-gray-400 {
     &:where(.dark, .dark *) {
       color: var(--color-gray-400);
@@ -1894,6 +1917,11 @@
       &::placeholder {
         color: var(--color-gray-400);
       }
+    }
+  }
+  .dark\:ring-offset-gray-800 {
+    &:where(.dark, .dark *) {
+      --tw-ring-offset-color: var(--color-gray-800);
     }
   }
   .dark\:invert {
@@ -1957,6 +1985,13 @@
       }
     }
   }
+  .dark\:focus\:ring-blue-600 {
+    &:where(.dark, .dark *) {
+      &:focus {
+        --tw-ring-color: var(--color-blue-600);
+      }
+    }
+  }
   .dark\:focus\:ring-blue-800 {
     &:where(.dark, .dark *) {
       &:focus {
@@ -1975,6 +2010,13 @@
     &:where(.dark, .dark *) {
       &:focus {
         --tw-ring-color: var(--color-yellow-900);
+      }
+    }
+  }
+  .dark\:focus\:ring-offset-gray-800 {
+    &:where(.dark, .dark *) {
+      &:focus {
+        --tw-ring-offset-color: var(--color-gray-800);
       }
     }
   }
