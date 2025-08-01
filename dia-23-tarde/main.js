@@ -1,4 +1,4 @@
-/*let contenedor = document.querySelector("#usuario")
+let contenedor = document.querySelector("#usuario")
 fetch("https://jsonplaceholder.typicode.com/users").then((respuesta)=>
     respuesta.json())
 .then((data)=>{
@@ -25,7 +25,7 @@ fetch("https://jsonplaceholder.typicode.com/users").then((respuesta)=>
 `
 
     });
-})*/
+})
 
 /*async function fetchData(){
     let respuesta = await fetch("https://jsonplaceholder.typicode.com/users")
@@ -53,10 +53,10 @@ fetch("https://jsonplaceholder.typicode.com/users").then((respuesta)=>
 `
     }
     )
-}*/
+}
 
 
-let contenedor = document.querySelector("#perritos");
+/*let contenedor = document.querySelector("#perritos");
 for (let i = 0; i < 8; i++) {
     fetch("https://dog.ceo/api/breeds/image/random")
   .then((respuesta) => respuesta.json())
@@ -69,4 +69,4 @@ for (let i = 0; i < 8; i++) {
   });
 
     
-}
+}*/
