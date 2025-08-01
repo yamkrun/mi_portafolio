@@ -6,13 +6,11 @@
     console.error("Error al obtener usuarios", error);
 })*/
 
-
-//funcion asincrona
+let cards=document.querySelector("#usuarios")
 async function cardUsuario() {
  try{  const respuesta = await fetch("https://jsonplaceholder.typicode.com/users")
    const data= await respuesta.json()
    console.log(data);
-   let cards=document.querySelector("#usuarios")
    data.forEach(usuario => {
    cards.innerHTML +=`
    <div class="max-w-sm p-6 w-[300px] h-[250px] bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
@@ -35,6 +33,9 @@ async function cardUsuario() {
 }
    catch(error){
  console.error("Error al obtener usuarios", error);
+ cards.innerHTML+=`<div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+  <span class="font-medium">Error al obtener usuarios!</span> Inténtalo de nuevo más tarde.
+</div>`
 }
 } 
 cardUsuario()
