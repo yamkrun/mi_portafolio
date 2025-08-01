@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <script src="./main.js" defer ></script>
+</head>
+<body class="w-screen h-screen flex justify-center items-center bg-[#192a32]">
+    <div class="flex flex-col justify-center items-center my-4 p-2 gap-6 w-full md:h-screen">
+     <div class="arriba grid grid-cols-3 mx-auto gap-5">
+        <div class="text-4xl font-extrabold flex items-center w-[90px] md:w-[108px]"><img src="./img/close-mini-1522-svgrepo-com.svg" alt="" class="h-8"><img src="./img/circle-svgrepo-com.svg" alt="" class="h-8"></div>
+        <button class="bg-[#1f3540] rounded-xl flex justify-center items-center gap-1 text-[#a7bec8]">
+            <p class="text-3xl font-extrabold mb-2.5">x</p><p class="font-bold">TURN</p></button>
+        
+            <div class="flex justify-end w-[90px] md:w-[108px]"><button class="bg-[#a8bec9] rounded-xl w-13 flex justify-center items-center"><svg class="w-7 h-7 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.651 7.65a7.131 7.131 0 0 0-12.68 3.15M18.001 4v4h-4m-7.652 8.35a7.13 7.13 0 0 0 12.68-3.15M6 20v-4h4"/>
+                </svg>
+            </button></div>
+    
+     </div>
+    <div class="contenedorCajas grid grid-cols-3 mx-auto gap-5">
+  <div class="w-[90px] h-[90px] md:w-[108px] md:h-[108px] bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold"></div>
+  <div class="w-[90px] h-[90px] md:w-[108px] md:h-[108px] bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold"></div>
+  <div class="w-[90px] h-[90px] md:w-[108px] md:h-[108px] bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold"></div>
+  <div class="w-[90px] h-[90px] md:w-[108px] md:h-[108px] bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold"></div>
+  <div class="w-[90px] h-[90px] md:w-[108px] md:h-[108px] bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold"></div>
+  <div class="w-[90px] h-[90px] md:w-[108px] md:h-[108px] bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold"></div>
+  <div class="w-[90px] h-[90px] md:w-[108px] md:h-[108px] bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold"></div>
+  <div class="w-[90px] h-[90px] md:w-[108px] md:h-[108px] bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold"></div>
+  <div class="w-[90px] h-[90px] md:w-[108px] md:h-[108px] bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold"></div>
+</div>
+
+     <div class="botones grid grid-cols-3 mx-auto gap-5">
+        <button class="bg-[#30c3c1] rounded-xl shadow-2xl w-[90px] md:w-[108px] cursor-pointer"><p class="text-sm text-[#1f3540]">X (YOU)</p><p class="text-2xl font-bold">0</p></button>
+        <button class="bg-[#a8bec9] rounded-xl shadow-2xl w-[90px] md:w-[108px] cursor-pointer"><p class="text-sm text-[#1f3540]">TIES</p><p class="text-2xl font-bold">0</p></button>
+        <button class="bg-[#d6a343] rounded-xl shadow-2xl w-[90px] md:w-[108px] cursor-pointer"><p class="text-sm text-[#1f3540]">O (CPU)</p><p class="text-2xl font-bold">0</p></button>
+     </div>
+    </div>
+
+    <div id="modalganador" class="fixed bg-black/50 inset-0 flex flex-col justify-center items-center">
+        <button id="cerrarmodal" class="font-bold text-[#a8bec9] absolute top-0 md:left-6 md:top-3 text-4xl cursor-pointer">x</button>
+        <div class="bg-[#1f3540] w-full h-[35%] flex flex-col justify-center items-center gap-5">
+            <div class="font-bold text-[#788f99] text-sm"><p>YOU WON!</p></div>
+            <div class="font-bold text-2xl text-[#31c4be] flex justify-center items-center gap-2"><img src="./img/close-mini-1522-svgrepo-com.svg" alt="" class="h-10"><h1>TAKES THE ROUND</h1></div>
+            <div class="flex gap-5">
+                <button class="bg-[#a8bec9] text-[#1f3540] text-sm font-bold p-2 rounded-lg">QUIT</button>
+                <button class="bg-[#f2b237] text-[#1f3540] text-sm font-bold p-2 rounded-lg">NEXT ROUND</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="fixed bg-black/50 inset-0 flex flex-col justify-center items-center hidden">
+        <button class="font-bold text-[#a8bec9] absolute top-0 md:left-6 md:top-3 text-4xl cursor-pointer">x</button>
+        <div class="bg-[#1f3540] w-full h-[35%] flex flex-col justify-center items-center gap-5">
+            <div class="font-bold text-2xl text-[#a8bec9] flex justify-center items-center gap-2"><h1>RESTART GAME?</h1></div>
+            <div class="flex gap-5">
+                <button class="bg-[#a8bec9] text-[#1f3540] text-sm font-bold p-2 rounded-lg">NO, CANCEL</button>
+                <button class="bg-[#f2b237] text-[#1f3540] text-sm font-bold p-2 rounded-lg">YES, RESTART</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

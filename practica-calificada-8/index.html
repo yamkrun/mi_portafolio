@@ -6,36 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
 </head>
-<body class="w-screen h-screen flex justify-center items-center bg-[#192a32]">
-    <div class="flex flex-col my-4 p-2 gap-6 w-full md:h-screen">
-     <div class="arriba grid grid-cols-3 mx-auto gap-5">
-        <div class="text-4xl font-extrabold flex w-[90px]"><p class="text-[#30c3c1]">X</p><p class="text-[#d6a343]">O</p></div>
-        <button class="bg-[#1f3540] rounded-xl flex justify-center items-center gap-1 text-[#a7bec8]">
-            <p class="text-3xl font-extrabold mb-2.5">x</p><p class="font-bold">TURN</p></button>
-        
-            <div class="flex justify-end w-[90px]"><button class="bg-[#a8bec9] rounded-xl w-13 flex justify-center items-center"><svg class="w-7 h-7 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.651 7.65a7.131 7.131 0 0 0-12.68 3.15M18.001 4v4h-4m-7.652 8.35a7.13 7.13 0 0 0 12.68-3.15M6 20v-4h4"/>
-                </svg>
-            </button></div>
-    
+<body class="h-screen bg-[#1a2b33] flex justify-center items-center">
+    <div class=" flex flex-col justify-center items-center gap-6">
+     <div class="flex items-center gap-2"><img src="./img/close-mini-1522-svgrepo-com.svg" alt="" class="h-10">
+        <img src="./img/circle-svgrepo-com.svg" alt="" class="h-10"></div>
+     <div class="flex flex-col justify-center items-center bg-[#1e3640] gap-6 rounded-xl w-[270px]  md:w-[324px] h-[180px]  md:h-[216px] shadow-2xl shadow-black">
+     <h1 class="font-bold text-sm md:text-l text-[#a9bec9]">PICK PLAYER 1'S MARK</h1>
+     <div class="flex w-[230px] h-[45px]  md:w-[280px]  md:h-[60px] bg-[#1a2b33] justify-between rounded-lg items-center p-1">
+        <div class="bg-[#1a2b33] rounded-lg w-[50%] h-[100%] flex items-center justify-center"><img src="./img/close-mini-1522-svgrepo-com (1).svg" alt="" class="h-6"></div>
+        <div class="bg-[#a9bec9] rounded-lg w-[50%] h-[100%] flex items-center justify-center"><img src="./img/circle-svgrepo-com (1).svg" alt="" class="h-6"></div>
      </div>
-    <div class="contenedorCajas grid grid-cols-3 mx-auto gap-5">
-  <div class="w-[90px] h-[90px] m bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold">1</div>
-  <div class="w-[90px] h-[90px] bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold">1</div>
-  <div class="w-[90px] h-[90px] bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold">1</div>
-  <div class="w-[90px] h-[90px] bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold">1</div>
-  <div class="w-[90px] h-[90px] bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold">1</div>
-  <div class="w-[90px] h-[90px] bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold">1</div>
-  <div class="w-[90px] h-[90px] bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold">1</div>
-  <div class="w-[90px] h-[90px] bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold">1</div>
-  <div class="w-[90px] h-[90px] bg-[#1f3540] rounded-xl shadow-2xl flex justify-center items-center text-white text-2xl font-bold">1</div>
-</div>
-
-     <div class="botones grid grid-cols-3 mx-auto gap-5">
-        <button class="bg-[#30c3c1] rounded-xl shadow-2xl w-[90px]"><p class="text-sm text-[#1f3540]">X (YOU)</p><p class="text-2xl font-bold">0</p></button>
-        <button class="bg-[#a8bec9] rounded-xl shadow-2xl w-[90px]"><p class="text-sm text-[#1f3540]">TIES</p><p class="text-2xl font-bold">0</p></button>
-        <button class="bg-[#d6a343] rounded-xl shadow-2xl w-[90px]"><p class="text-sm text-[#1f3540]">O (CPU)</p><p class="text-2xl font-bold">0</p></button>
+     <h2 class="font-semibold text-sm text-[#8d8f91]">REMEMBER: X GOES FIRST</h2>
      </div>
+     <a href="./juego.html"><button class="bg-[#f2b237] cursor-pointer text-[#1f3540] text-sm font-bold p-2 w-[270px] md:w-[324px] rounded-lg">NEW GAME (VS CPU)</button></a>
+     <a href="./juego.html"><button class="bg-[#30c3c1] cursor-pointer text-[#1f3540] text-sm font-bold p-2 w-[270px] md:w-[324px] rounded-lg">NEW GAME (VS PLAYER)</button></a>
     </div>
+    
+
+    
 </body>
 </html>
